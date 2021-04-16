@@ -15,7 +15,7 @@ public class BowlingApp
         BowlingService bowlingService = new BowlingService();
 
         Integer score = bowlingService.playBowling(frameString);
-        System.out.println( "Hello World!" );
+        System.out.printf( "Frames : " + frameString + "%n Score : " + score );
     }
 
 }
