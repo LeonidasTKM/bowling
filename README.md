@@ -1,6 +1,6 @@
 # Bowling Game
 
-##Working Environment
+## working Environment
 You need to install Java 11 and Maven 3+ to run this app.
 
 You may also have to configure your setting.xml file to access maven central
@@ -43,11 +43,11 @@ Here is an example :
 </settings>
 ```
 
-#How to run this application?
+## How to run this application?
 
 You can run this application using two methods.
 
-## Run a jar file
+### Run a jar file
 
 You can build the jar file **bowling-1-0.-SNAPSHOT.jar** inside the target folder by running the command
 *mvn package*
@@ -61,7 +61,7 @@ Frames : X X X X X X X X X XXX
 Score : 300
 ```
 
-## Run the main class
+### Run the main class
 
 You can also run this application by running the main class and providing an argument
 in your IDE
