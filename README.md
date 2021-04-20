@@ -54,7 +54,7 @@ You can build the jar file **bowling-1-0.-SNAPSHOT.jar** inside the target folde
 
 You can then run the following command en provide the frame string to process :
 - java -jar [path_to_the_jar_file] [frame string] : this command will log the score result
-####Exemple:
+#### Exemple:
 ``` 
 $ java -jar bowling-1.0-SNAPSHOT.jar "X X X X X X X X X XXX"
 Frames : X X X X X X X X X XXX
