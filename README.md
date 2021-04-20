@@ -1,5 +1,6 @@
+# Bowling Game
 
-# Working Environment
+##Working Environment
 You need to install Java 11 and Maven 3+ to run this app.
 
 You may also have to configure your setting.xml file to access maven central
