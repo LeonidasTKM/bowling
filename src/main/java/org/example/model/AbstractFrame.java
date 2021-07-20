@@ -1,30 +1,39 @@
 package org.example.model;
 
-import java.util.LinkedList;
-import java.util.List;
-
 public abstract class AbstractFrame {
-
-    private final List<Roll> rolls = new LinkedList<>();
-
-    public AbstractFrame(String frameString) {
-        char[] chars = frameString.toCharArray();
-        for (char aChar : chars) {
-            rolls.add(new Roll(aChar + ""));
-        }
-    }
-
+    
+    private String frame = null;
+    private Boolean isSpareFrame = false;
+    private Boolean isStrikeFrame = false;
+    
     public abstract int getScore();
-
+    public abstract int getStrikeBonus();
     public abstract int getFirstRollBonus();
 
-    public abstract int getStrikeBonus();
+    public AbstractFrame() {
+    }
 
-    public abstract boolean isStrikeFrame();
+    public AbstractFrame(String frame) {
+        this.frame = frame; 
+    }
 
-    public abstract boolean isSpareFrame();
+    public boolean isStrikeFrame() {
+        return isStrikeFrame;
+    };
+    
+    public boolean isSpareFrame() {
+        return isSpareFrame;
+    };
+    
+    public String getFrame() {
+        return this.frame;
+    }
+    
+    public void setIsSpareFrame(Boolean isSpareFrame) {
+        this.isSpareFrame = isSpareFrame;
+    }
 
-    public List<Roll> getRolls() {
-        return rolls;
+    public void setIsStrikeFrame(Boolean isStrikeFrame) {
+        this.isStrikeFrame = isStrikeFrame;
     }
 }
